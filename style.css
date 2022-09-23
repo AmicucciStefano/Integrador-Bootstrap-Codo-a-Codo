@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.cont {
+    width: 95%;
+}
+
+.hero {
+    height: 95vh;
+    position: absolute;
+    z-index: 1;
+}
+
+.background-opacity {
+    display: flex;
+    height: 95vh;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    z-index: 13;
+    opacity: 0.4;
+}
+
+.div-hero{
+    height: 95vh;
+    width: 95%;
+    position: relative;
+    z-index: 14;
+    padding-top: 15rem;
+}
+
+.div-hero {
+    margin-right: 75px;
+    text-align: end;
+    width: 40%;
+}
+
+.oradores {
+    margin-top: 1rem;
+    position: relative;
+    width: 80%;
+}
+
+.oradores-text {
+    text-align: center;
+}
+
+@media (min-width:1899px) {
+    .div-hero{
+        padding-top: 24rem;
+    }
+}
