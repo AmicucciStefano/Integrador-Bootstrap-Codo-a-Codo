@@ -16,12 +16,12 @@ const eraseAll = (e) => {
 
 const getResume = (e) => {
     e.preventDefault();
-    if(inputCantidad.value <= 0){
-        return renderError("Por favor, Ingrese un numero mayor a 0")
+    if (inputEmail.value === "" || inputName.value === "" || inputSurname.value === "") {
+        return renderError("Por favor, llene todos los campos");
     }else if(categorySelected.value === "-") {
         return renderError("Por favor, Ingrese una categoria")
-    }else if (inputEmail.value === "" || inputName.value === "" || inputSurname.value === "") {
-        return renderError("Por favor, llene todos los campos");
+    }else if(inputCantidad.value <= 0){
+        return renderError("Por favor, Ingrese un numero mayor a 0")
     }else
     total.innerHTML = `${sumQuantity()}`;
 }
