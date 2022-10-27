@@ -50,6 +50,22 @@
     text-align: center;
 }
 
+.tickets {
+    width: 80%;
+}
+
+.bg-blue {
+    background-color: rgb(209, 209, 230);
+}
+
+.bg-green {
+    background-color: rgb(66, 196, 97);
+}
+
+.bg-green:hover {
+    background-color:rgb(55, 161, 80) !important;
+}
+
 @media (min-width:1899px) {
     .div-hero{
         padding-top: 24rem;

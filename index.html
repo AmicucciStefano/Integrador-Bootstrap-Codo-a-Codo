@@ -148,6 +148,78 @@
             <button type="submit" class="btn btn-success w-100 mt-3 mb-3">Enviar</button>
         </form>
     </section>
+    <section class="tickets me-auto ms-auto">
+        <div class="d-flex justify-content-evenly">
+            <div class="card rounded-0 border-primary mb-3 text-center" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title fw-semibold">Estudiante</h5>
+                    <h6 class="card-subtitle mb-2">Tienen un descuento</h6>
+                    <p class="card-text fw-bold">80%</p>
+                    <span class="text-muted">* Presentar documentacion</span>
+                </div>
+            </div>
+            <div class="card rounded-0 border border-secondary mb-3 text-center" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title fw-semibold">Trainee</h5>
+                    <h6 class="card-subtitle mb-2">Tienen un descuento</h6>
+                    <p class="card-text fw-bold">50%</p>
+                    <span class="text-muted">* Presentar documentacion</span>
+                </div>
+            </div>
+            <div class="card rounded-0 border-warning mb-3 text-center" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title fw-semibold">Junior</h5>
+                    <h6 class="card-subtitle mb-2">Tienen un descuento</h6>
+                    <p class="card-text fw-bold">15%</p>
+                    <span class="text-muted">* Presentar documentacion</span>
+                </div>
+            </div>
+        </div>
+        <span class="d-flex justify-content-center">VENTA</span>
+        <h2 class="d-flex justify-content-center fw-semibold">VALOR DE TICKET $200</h2>
+        <form class="form">
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="input-name form-control" placeholder="Nombre" aria-label="nombre">
+                </div>
+                <div class="col">
+                    <input type="text" class="input-surname form-control" placeholder="Apellido" aria-label="apellido">
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"></label>
+                <input placeholder="Correo" type="email" class="input-email form-control" id="exampleInputEmail1"
+                    aria-describedby="emailHelp">
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="input-cantidad">Cantidad</label>
+                    <input  min="1" pattern="^[0-9]+" type="number" class="input-cantidad form-control" placeholder="Cantidad" aria-label="nombre"
+                        id="inputCantidad">
+                </div>
+                <div class="col">
+                    <label for="">Categoria</label>
+                    <select class="category-selected form-select" aria-label="Default select example">
+                        <option selected>-</option>
+                        <option value="1">Estudiante</option>
+                        <option value="2">Trainee</option>
+                        <option value="3">Junior</option>
+                    </select>
+                </div>
+            </div>
+            <div class="bg-blue rounded-1 mt-4">
+                <p class="mt-auto mb-auto p-2 ">Total a Pagar: $<span class="total"></span></p>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button type="submit" class="btn-borrar btn text-white bg-green w-100 mt-3 mb-3">Borrar</button>
+                </div>
+                <div class="col">
+                    <button type="submit" class="btn-resumen btn text-white bg-green w-100 mt-3 mb-3">Resumen</button>
+                </div>
+            </div>
+        </form>
+    </section>
     <footer class="navbar-dark bg-dark p-4">
         <ul class="navbar-nav d-flex flex-row justify-content-evenly">
             <li class="nav-item">
@@ -174,5 +246,6 @@
         </ul>
     </footer>
 </body>
+<script src="index.js"></script>
 
 </html>
